@@ -1,0 +1,35 @@
+.sidebar{
+    width: 18%;
+    min-height: 100vh;
+    border: 2px solid rgb(188, 188, 255);
+    border-top: 0;
+    font-size: max(1vw,10px);
+}
+.side-options{
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid rgb(188, 188, 255);
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+}
+.side-option.active{
+    background-color: tomato;
+    color: white;
+    border-color: tomato;
+}
+
+@media (max-width:900px) {
+    .side-option p {
+        display: none;
+    }
+}
